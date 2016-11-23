@@ -418,7 +418,8 @@ def ps_13(estado):
   PS13_1: No hay ningún niño en la derecha o está también el Padre
   PS13_2: No está el ladrón en la derecha o está con el policía
   """
-  return not_nino_or_h_en(D,estado) or not_x_or_con_y_en(L,P,D,estado)
+  import pdb; pdb.set_trace()
+  return not_nino_or_h_en(D,estado) and not_x_or_con_y_en(L,P,D,estado)
 def pr_14(estado):
   """
   R14: Mover Policia con Niño a la Izquierda [P,Ox -> I]
